@@ -19,13 +19,13 @@
         header('location:index.php');
     }
 
-    if(isset($_GET['update_task'])){
-      $data1 = "<script>Confirm('Enter the data')</script>";
+  //   if(isset($_GET['update_task'])){
+  //     $data1 = "<script>Confirm('Enter the data')</script>";
 
-      $id1 = $_GET['update_task'];
-      mysqli_query($db, "UPDATE FROM `taskviewer` WHERE TaskID=$id1");
-      header('location:index.php');
-  }
+  //     $id1 = $_GET['update_task'];
+  //     mysqli_query($db, "UPDATE FROM `taskviewer` WHERE TaskID=$id1");
+  //     header('location:index.php');
+  // }
 
     $tasks = mysqli_query($db, "SELECT * FROM `taskviewer`;")
 ?>
